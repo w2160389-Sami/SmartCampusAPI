@@ -18,23 +18,18 @@ http://localhost:8080/SmartCampusAPI/api/v1
 ## Sample CURL Commands
 
 1. Get API info
-curl -X GET http://localhost:8080/SmartCampusAPI/api/v1
+ http://localhost:8080/SmartCampusAPI/api/v1
 
 2. Create a Room
-curl -X POST http://localhost:8080/SmartCampusAPI/api/v1/rooms \
--H "Content-Type: application/json" \
--d '{"id":"R1","name":"Library Room","capacity":50}'
-
+http://localhost:8080/SmartCampusAPI/api/v1/rooms 
 3. Get all Rooms
-curl -X GET http://localhost:8080/SmartCampusAPI/api/v1/rooms
+ http://localhost:8080/SmartCampusAPI/api/v1/rooms
 
 4. Create a Sensor
-curl -X POST http://localhost:8080/SmartCampusAPI/api/v1/sensors \
--H "Content-Type: application/json" \
--d '{"id":"S1","type":"Temperature","status":"ACTIVE","currentValue":0,"roomId":"R1"}'
+ http://localhost:8080/SmartCampusAPI/api/v1/sensors 
 
 5. Get Sensors by Type
-curl -X GET "http://localhost:8080/SmartCampusAPI/api/v1/sensors?type=Temperature"
+"http://localhost:8080/SmartCampusAPI/api/v1/sensors?type=Temperature"
 ---
 
 ## Part 1: Service Architecture & Setup
